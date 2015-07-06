@@ -127,7 +127,9 @@
     <Content Include="App_Data\config.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="App_Data\random.xml" />
+    <Content Include="App_Data\random.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Css\1.css" />
     <Content Include="Global.asax" />
     <Content Include="Image\0.jpg" />

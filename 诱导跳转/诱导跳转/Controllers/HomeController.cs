@@ -20,7 +20,8 @@ namespace 诱导跳转.Controllers
             PackageInfo pack = new PackageInfo();
             pack.Uid = uid;
             pack.Pid = pid;
-            pack.Url = GetUrlFromXml(pack.Uid, pack.Pid);
+            pack.Url = GetInfoFromXml(pack.Uid, pack.Pid, "url");
+            pack.Cnzz = GetInfoFromXml(pack.Uid, pack.Pid, "cnzz");
             ViewBag.TopImg = SetImgName(true); //设置顶部图片名
             #region 设置图片名
             ViewBag.Img2 = SetImgName(false);
@@ -45,24 +46,24 @@ namespace 诱导跳转.Controllers
             }
         }
 
-        private string GetUrlFromXml(string uid, string pid) //从xml配置文件中取出下载链接
+        private string GetInfoFromXml(string uid, string pid, string param) //从xml配置文件中取出下载链接
         {
-            var url = string.Empty;
+            string result = string.Empty;
             XDocument doc = XDocument.Load(HttpContext.Server.MapPath("~/App_Data/config.xml"));
             var q = from d in doc.Descendants("app") select d;
             foreach (var item in q)
             {
                 if (item.Element("uid").Value == uid && item.Element("pid").Value == pid)
                 {
-                    url = item.Element("url").Value;
+                    result = item.Element(param).Value;
                     break;
                 }
                 else
                 {
-                    url = "http://www.anzhuangba.com";
+                    result = "http://www.anzhuangba.com";
                 }
             }
-            return url;
+            return result;
         }
 
     }

@@ -13,7 +13,7 @@ namespace 诱导跳转.Controllers
         //
         // GET: /Random/
 
-        public ActionResult Index(string uid="5400",string pid="a42")
+        public ActionResult Index(string uid="5400",string pid="a42") //控制生成随机链接
         {
             StringBuilder sb = GetRandStr();
             string url = string.Empty;
@@ -33,6 +33,27 @@ namespace 诱导跳转.Controllers
             }
             return Redirect(url);
         }
+
+        public ActionResult Raw(string uid = "5400", string pid = "a42")  //普通链接
+        {
+            string url = string.Empty;
+            XDocument doc = XDocument.Load(HttpContext.Server.MapPath("~/App_Data/random.xml"));
+            var q = from d in doc.Descendants("app") select d;
+            foreach (var item in q)
+            {
+                if (item.Element("uid").Value == uid && item.Element("pid").Value == pid)
+                {
+                    url = item.Element("url").Value;
+                    break;
+                }
+                else
+                {
+                    url = "http://www.anzhuangba.com";
+                }
+            }
+            return Redirect(url);
+        }
+           
 
         private static StringBuilder GetRandStr()
         {

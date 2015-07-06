@@ -21,6 +21,6 @@ D:\源码\诱导跳转\诱导跳转\bin\System.Web.Razor.xml
 D:\源码\诱导跳转\诱导跳转\bin\System.Web.WebPages.xml
 D:\源码\诱导跳转\诱导跳转\bin\System.Web.WebPages.Deployment.xml
 D:\源码\诱导跳转\诱导跳转\bin\System.Web.WebPages.Razor.xml
-D:\源码\诱导跳转\诱导跳转\obj\Debug\诱导跳转.csprojResolveAssemblyReference.cache
 D:\源码\诱导跳转\诱导跳转\obj\Debug\诱导跳转.dll
 D:\源码\诱导跳转\诱导跳转\obj\Debug\诱导跳转.pdb
+D:\源码\诱导跳转\诱导跳转\obj\Debug\诱导跳转.csprojResolveAssemblyReference.cache
