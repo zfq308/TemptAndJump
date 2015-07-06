@@ -1,0 +1,72 @@
+BODY {PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #000000; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; FONT-FAMILY: Microsoft Yahei; COLOR: #ffffff; FONT-SIZE: 12px; PADDING-TOP: 0px}
+DIV {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px}
+FORM {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px}
+IMG {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px}
+UL {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px}
+LI {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px}
+P {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px}
+INPUT {FONT-FAMILY: Microsoft Yahei; VERTICAL-ALIGN: middle; -webkit-tap-highlight-color: rgba(0, 0, 0, 0)}
+LI {LIST-STYLE-TYPE: none; -webkit-tap-highlight-color: #01A0FE}
+A {TEXT-DECORATION: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0)}
+A:link {COLOR: #454545; TEXT-DECORATION: none}
+A:visited {COLOR: #454545; TEXT-DECORATION: none}
+.kb_yd {PADDING-BOTTOM: 30px; MARGIN: 0px auto; WIDTH: 320px; BACKGROUND: url(bg.gif)}
+.top {BACKGROUND: url(top_bg.gif) repeat-x 0px 0px; HEIGHT: 40px}
+.logo {WIDTH: 146px; BACKGROUND: url(bg_png.png) no-repeat 0px 0px; FLOAT: left; HEIGHT: 41px}
+A.sear {WIDTH: 41px; DISPLAY: block; BACKGROUND: url(bg_png.png) no-repeat -160px 0px; FLOAT: right; HEIGHT: 41px; MARGIN-RIGHT: 12px}
+.kb_dh {LINE-HEIGHT: 39px; MARGIN: 1px auto 0px; WIDTH: 300px; BACKGROUND: url(top_line.gif) no-repeat center 0px; HEIGHT: 39px; COLOR: #cacaca; CLEAR: both; FONT-SIZE: 16px}
+.kb_dh LI {TEXT-ALIGN: center; WIDTH: 60px; FLOAT: left}
+.kb_dh LI.xz {BACKGROUND: url(bg_png.png) no-repeat -212px 6px; COLOR: #ffffff}
+.kb_dh A {WIDTH: 60px; DISPLAY: block; HEIGHT: 39px}
+.kb_dh A:link {COLOR: #cacaca}
+.kb_dh A:visited {COLOR: #cacaca}
+.kb_dh A:hover {COLOR: #cacaca; TEXT-DECORATION: none}
+.home_lb {WIDTH: 320px; DISPLAY: inline-block}
+.h_lb_dh {WIDTH: 100%; DISPLAY: table; BACKGROUND: url(bg_png.png) no-repeat -180px -51px; HEIGHT: 39px; BORDER-TOP: #000 1px solid}
+.hlb_nx {LINE-HEIGHT: 34px; HEIGHT: 38px; COLOR: #00a1ff; FONT-SIZE: 20px; BORDER-TOP: #474749 1px solid}
+.name {WIDTH: 280px; FLOAT: left; HEIGHT: 38px}
+
+.jt_xia {WIDTH: 42px; DISPLAY: inline-block; BACKGROUND: url(bg_png.png) no-repeat -374px 6px; HEIGHT: 38px; VERTICAL-ALIGN: middle}
+.jt_right {WIDTH: 42px; DISPLAY: inline-block; BACKGROUND: url(bg_png.png) no-repeat -374px 6px; HEIGHT: 38px; VERTICAL-ALIGN: middle}
+.jt_right {BACKGROUND: url(bg_png.png) no-repeat -328px 6px}
+.more {WIDTH: 40px; DISPLAY: block; BACKGROUND: url(bg_png.png) no-repeat -285px 10px; FLOAT: right; HEIGHT: 38px}
+
+.fl {TEXT-ALIGN: center; WIDTH: 74px; DISPLAY: block; FLOAT: right; HEIGHT: 38px; COLOR: #01a0fe; FONT-SIZE: 17px}
+A.fl {COLOR: #01a0fe; TEXT-DECORATION: none}
+.new {TEXT-ALIGN: center; WIDTH: 121px; FLOAT: left; MARGIN-LEFT: 12px; FONT-SIZE: 15px}
+.new A {LINE-HEIGHT: 35px; WIDTH: 60px; DISPLAY: block; FLOAT: left; HEIGHT: 38px; COLOR: #a9abac}
+.new A.xz {BACKGROUND: url(best_new.gif) no-repeat 0px 5px; COLOR: #ffffff}
+.lb_zk {WIDTH: 100%; COLOR: #c3c3c3}
+.lb_zk LI {WIDTH: 100%; DISPLAY: block; BACKGROUND: url(lb_line_bg.gif) repeat-x 0px bottom; FLOAT: left; HEIGHT: 126px}
+.lb_zk LI A {WIDTH: 100%; DISPLAY: block; HEIGHT: 124px; -webkit-transition: background-color 0.3s ease; -moz-transition: background-color 0.3s ease; -o-transition: background-color 0.3s ease; transition: background-color 0.3s ease}
+.lb_zk LI A:hover {BACKGROUND-COLOR: #252525}
+.lb_zk LI.none {BACKGROUND: none transparent scroll repeat 0% 0%}
+.lb_zk .L1 {POSITION: relative; MARGIN: 9px 0px 0px 9px; WIDTH: 81px; BACKGROUND: url(jt_pc.gif) no-repeat 0px 0px; FLOAT: left; HEIGHT: 106px}
+.lb_zk .L1 SPAN.pc_bg {Z-INDEX: 10; POSITION: absolute; TEXT-ALIGN: right; LINE-HEIGHT: 17px; WIDTH: 70px; PADDING-RIGHT: 5px; COLOR: #ffffff; TOP: 87px; LEFT: 3px}
+.lb_zk .L1 SPAN.pc_wz {Z-INDEX: 10; POSITION: absolute; TEXT-ALIGN: right; LINE-HEIGHT: 17px; WIDTH: 70px; PADDING-RIGHT: 5px; COLOR: #ffffff; TOP: 87px; LEFT: 3px}
+.lb_zk .L1 SPAN.pc_bg {Z-INDEX: 5; POSITION: absolute; FILTER: alpha(opacity=50); PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #000000; PADDING-LEFT: 0px; WIDTH: 75px; PADDING-RIGHT: 0px; HEIGHT: 17px; TOP: 86px; PADDING-TOP: 0px; LEFT: 3px; opacity: 0.5}
+.lb_zk .L1 IMG {PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; PADDING-TOP: 3px}
+.lb_zk .R1 {LINE-HEIGHT: 24px; WIDTH: 222px; BACKGROUND: url(jt_bg.gif) no-repeat 193px 50px; FLOAT: right; HEIGHT: 113px; COLOR: #c3c3c3; PADDING-TOP: 11px}
+.lb_zk .R1 .dazi {LINE-HEIGHT: 28px; COLOR: #ffffff; FONT-SIZE: 18px}
+.h_sz {FONT-STYLE: italic; COLOR: #fbc136; FONT-SIZE: 13px; VERTICAL-ALIGN: middle}
+
+.star_1 {WIDTH: 70px; DISPLAY: inline-block; BACKGROUND: url(11.png) no-repeat -2px -50px; HEIGHT: 18px; VERTICAL-ALIGN: middle}
+.star_2 {WIDTH: 70px; DISPLAY: inline-block; BACKGROUND: url(11.png) no-repeat -2px -50px; HEIGHT: 18px; VERTICAL-ALIGN: middle}
+
+.star_1 {BACKGROUND: url(11.png) no-repeat 3px -70px}
+.star_2 {BACKGROUND: url(11.png) no-repeat 3px -52px}
+
+
+.gengduo {POSITION: relative; TEXT-ALIGN: center; LINE-HEIGHT: 46px; WIDTH: 100%; COLOR: #bcbdbe; CLEAR: both; FONT-SIZE: 16px}
+.f_top {Z-INDEX: 100; POSITION: absolute; WIDTH: 51px; BOTTOM: 10px; DISPLAY: none; BACKGROUND: url(F_top.png) no-repeat -2px -2px; HEIGHT: 46px; RIGHT: 10px}
+.f_top A {WIDTH: 51px; DISPLAY: block; HEIGHT: 46px}
+.s_R {Z-INDEX: 5; BORDER-BOTTOM: 0px; POSITION: absolute; BORDER-LEFT: 0px; LINE-HEIGHT: 32px; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium; WIDTH: 57px; BACKGROUND: none transparent scroll repeat 0% 0%; HEIGHT: 32px; COLOR: #ffffff; FONT-SIZE: 16px; BORDER-TOP: 0px; TOP: 3px; RIGHT: 0px; BORDER-RIGHT: 0px; -moz-outline: none}
+.s_L {Z-INDEX: 5; BORDER-BOTTOM: 0px; POSITION: absolute; BORDER-LEFT: 0px; LINE-HEIGHT: 32px; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium; WIDTH: 57px; BACKGROUND: none transparent scroll repeat 0% 0%; HEIGHT: 32px; COLOR: #ffffff; FONT-SIZE: 16px; BORDER-TOP: 0px; TOP: 3px; RIGHT: 0px; BORDER-RIGHT: 0px; -moz-outline: none}
+.s_L {LINE-HEIGHT: 32px; WIDTH: 185px; HEIGHT: 32px; COLOR: #333333; LEFT: 35px}
+.h_lb_dh1 {WIDTH: 100%; DISPLAY: table; HEIGHT: 39px; BORDER-TOP: #000 1px solid}
+.h_gd {MIN-HEIGHT: 350px; HEIGHT: auto !important; OVERFLOW: visible}
+.s_gd {MIN-HEIGHT: 550px; HEIGHT: auto !important; OVERFLOW: visible}
+
+
+BODY.ui-mobile-viewport {OVERFLOW-X: hidden}
+DIV.ui-mobile-viewport {OVERFLOW-X: hidden}

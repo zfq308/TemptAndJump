@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\wwwroot</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Data/config.xml">
+      <publishTime>07/06/2015 11:52:29</publishTime>
+    </File>
+    <File Include="App_Data/random.xml">
+      <publishTime>07/06/2015 11:41:51</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>07/06/2015 11:58:15</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>07/06/2015 11:58:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/02/2015 17:44:29</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Mvc.FixedDisplayModes.dll">
+      <publishTime>07/02/2015 17:44:29</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>07/02/2015 17:44:29</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>07/10/2012 12:07:38</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.WebRequest.dll">
+      <publishTime>07/10/2012 12:07:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>07/02/2015 17:44:29</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>07/02/2015 17:44:29</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>07/02/2015 17:44:29</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>07/02/2015 17:44:29</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>07/02/2015 17:44:29</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>07/02/2015 17:44:29</publishTime>
+    </File>
+    <File Include="bin/诱导跳转.dll">
+      <publishTime>07/06/2015 11:58:12</publishTime>
+    </File>
+    <File Include="Css/1.css">
+      <publishTime>07/02/2015 17:58:10</publishTime>
+    </File>
+    <File Include="Image/0.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/1.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/10.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/100.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/101.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/102.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/103.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/104.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/105.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/11.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/11.png">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/12.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/13.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/14.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/15.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/16.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/17.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/18.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/19.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/2.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/20.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/21.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/22.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/23.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/24.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/25.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/26.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/27.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/28.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/29.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/3.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/30.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/4.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/5.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/6.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/7.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/8.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/9.jpg">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/best_new.gif">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/bg.gif">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/bg_png.png">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/ccs_kb.css">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/jt_bg.gif">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/jt_pc.gif">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/lb_line_bg.gif">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/top_bg.gif">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="Image/top_line.gif">
+      <publishTime>07/02/2015 17:59:32</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>07/02/2015 17:44:30</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>07/06/2015 11:58:13</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>07/03/2015 17:05:59</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>07/02/2015 17:44:28</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/06/2015 11:58:12</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

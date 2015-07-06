@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <app>
+    <uid>5400</uid>
+    <pid>a42</pid>
+    <url>http://www.sanshengtangzisha.cn/random/index</url>
+  </app>
+  <app>
+    <uid>3870</uid>
+    <pid>a302</pid>
+    <url>http://www.sanshengtangzisha.cn/random/index/3870-a302</url>
+  </app>
+  <app>
+    <uid>3420</uid>
+    <pid>a181</pid>
+    <url>http://www.sanshengtangzisha.cn/random/index/3420-a181</url>
+  </app>
+</root>
