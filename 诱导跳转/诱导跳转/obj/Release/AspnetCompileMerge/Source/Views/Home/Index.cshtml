@@ -7,6 +7,7 @@
     var img3 = ViewBag.Img3 + ".jpg";
     var img4 = ViewBag.Img4 + ".jpg";
     var img5 = ViewBag.Img5 + ".jpg";
+    var imgUrl = "http://f1.freep.cn/551893/sex/";
 }
 
 <!DOCTYPE html>
@@ -90,7 +91,7 @@
                     }
                 </script>
 
-                <a href="@Model.Url"><img src="~/Image/@topImg" /></a>
+                <a href="@Model.Url"><img src="@Path.Combine(imgUrl,topImg)" /></a>
 
             </div>
         </div>
@@ -103,7 +104,7 @@
                     <li>
                         <div class=L1>
                             <span class=pc_wz>超爽片</span><span class=pc_bg></span>
-                            <a href="@Model.Url"><img src="~/Image/@img2" /></a>
+                            <a href="@Model.Url"><img src="@Path.Combine(imgUrl,img2)" /></a>
                         </div>
                         <div class=R1>
                             <p class=dazi>
@@ -117,7 +118,7 @@
                     <li>
                         <div class=L1>
                             <span class=pc_wz>超爽片</span><span class=pc_bg></span>
-                            <a href="@Model.Url"><img src="~/Image/@img3" /></a>
+                            <a href="@Model.Url"><img src="@Path.Combine(imgUrl,img3)" /></a>
                         </div>
                         <div class=R1>
                             <p class=dazi>
@@ -131,7 +132,7 @@
                     <li>
                         <div class=L1>
                             <span class=pc_wz>超爽片</span><span class=pc_bg></span>
-                            <a href="@Model.Url"><img src="~/Image/@img4" /></a>
+                            <a href="@Model.Url"><img src="@Path.Combine(imgUrl,img4)" /></a>
                         </div>
                         <div class=R1>
                             <p class=dazi>
@@ -145,7 +146,7 @@
                     <li>
                         <div class=L1>
                             <span class=pc_wz>超爽片</span><span class=pc_bg></span>
-                            <a href="@Model.Url"><img src="~/Image/@img5" /></a>
+                            <a href="@Model.Url"><img src="@Path.Combine(imgUrl,img5)" /></a>
                         </div>
                         <div class=R1>
                             <p class=dazi>
@@ -159,7 +160,7 @@
                     <li>
                         <div class=L1>
                             <span class=pc_wz>超爽片</span><span class=pc_bg></span>
-                            <a href="@Model.Url"><img src="~/Image/@img1" /></a>
+                            <a href="@Model.Url"><img src="@Path.Combine(imgUrl,img1)" /></a>
                         </div>
                         <div class=R1>
                             <p class=dazi>
