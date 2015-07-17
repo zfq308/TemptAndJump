@@ -18,18 +18,28 @@ namespace 诱导跳转.Controllers
             StringBuilder sb = GetRandStr();
             string url = string.Empty;
             XDocument doc = XDocument.Load(HttpContext.Server.MapPath("~/App_Data/random.xml"));
-            var q = from d in doc.Descendants("app") select d;
-            foreach (var item in q)
+            var q = from d in doc.Descendants("app")
+                    select d;
+            url = q.Where(a => a.Element("uid").Value == uid && a.Element("pid").Value == pid).FirstOrDefault().Element("url").Value;
+            //foreach (var item in q)
+            //{
+            //    if (item.Element("uid").Value == uid && item.Element("pid").Value == pid)
+            //    {
+            //        url = item.Element("url").Value + sb.ToString() + ".apk";
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        url = "http://www.anzhuangba.com";
+            //    }
+            //}
+            if (string.IsNullOrEmpty(url))
             {
-                if (item.Element("uid").Value == uid && item.Element("pid").Value == pid)
-                {
-                    url = item.Element("url").Value + sb.ToString() + ".apk";
-                    break;
-                }
-                else
-                {
-                    url = "http://www.anzhuangba.com";
-                }
+                url = "http://www.anzhuangba.com";
+            }
+            else
+            {
+                url += sb.ToString() + ".apk";
             }
             return Redirect(url);
         }
@@ -39,17 +49,22 @@ namespace 诱导跳转.Controllers
             string url = string.Empty;
             XDocument doc = XDocument.Load(HttpContext.Server.MapPath("~/App_Data/random.xml"));
             var q = from d in doc.Descendants("app") select d;
-            foreach (var item in q)
+            url = q.Where(a => a.Element("uid").Value == uid && a.Element("pid").Value == pid).FirstOrDefault().Element("url").Value;
+            //foreach (var item in q)
+            //{
+            //    if (item.Element("uid").Value == uid && item.Element("pid").Value == pid)
+            //    {
+            //        url = item.Element("url").Value;
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        url = "http://www.anzhuangba.com";
+            //    }
+            //}
+            if (string.IsNullOrEmpty(url))
             {
-                if (item.Element("uid").Value == uid && item.Element("pid").Value == pid)
-                {
-                    url = item.Element("url").Value;
-                    break;
-                }
-                else
-                {
-                    url = "http://www.anzhuangba.com";
-                }
+                url = "http://www.anzhuangba.com";
             }
             return Redirect(url);
         }

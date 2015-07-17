@@ -46,24 +46,26 @@ namespace 诱导跳转.Controllers
             }
         }
 
-        private string GetInfoFromXml(string uid, string pid, string param) //从xml配置文件中取出下载链接
+        private string[] GetInfoFromXml(string uid, string pid, string param) //从xml配置文件中取出下载链接
         {
             string result = string.Empty;
             XDocument doc = XDocument.Load(HttpContext.Server.MapPath("~/App_Data/config.xml"));
             var q = from d in doc.Descendants("app") select d;
-            foreach (var item in q)
-            {
-                if (item.Element("uid").Value == uid && item.Element("pid").Value == pid)
-                {
-                    result = item.Element(param).Value;
-                    break;
-                }
-                else
-                {
-                    result = "http://www.anzhuangba.com";
-                }
-            }
-            return result;
+            result = q.Where(a => a.Element("uid").Value == uid && a.Element("pid").Value == pid).FirstOrDefault().Element(param).Value;
+
+            //foreach (var item in q)
+            //{
+            //    if (item.Element("uid").Value == uid && item.Element("pid").Value == pid)
+            //    {
+            //        result = item.Element(param).Value;
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        result = "http://www.anzhuangba.com";
+            //    }
+            //}
+            return result.Split('|');
         }
 
     }
