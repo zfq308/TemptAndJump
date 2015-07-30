@@ -4,7 +4,9 @@
     <uid>5400</uid>
     <pid>a42</pid>
     <url>http://www.sanshengtangzisha.cn/random/index</url>
-    <cnzz></cnzz>
+    <cnzz>
+      
+    </cnzz>
   </app>
   <app>
     <uid>3870</uid>
@@ -22,12 +24,28 @@
     <uid>5969</uid>
     <pid>a74</pid>
     <url>http://www.sanshengtangzisha.cn/random/index/5969-a74</url>
-   <cnzz><![CDATA[<script src="http://s4.cnzz.com/z_stat.php?id=1255700487&web_id=1255700487" language="JavaScript"></script>]]></cnzz>
+   <cnzz>
+     <![CDATA[<script src="http://s4.cnzz.com/z_stat.php?id=1255700487&web_id=1255700487" language="JavaScript"></script>]]>
+   </cnzz>
   </app>
   <app>
     <uid>5969</uid>
     <pid>jx84</pid>
     <url>http://www.sanshengtangzisha.cn/random/raw/5969-jx84</url>
-    <cnzz><![CDATA[<script src="http://s4.cnzz.com/z_stat.php?id=1255700487&web_id=1255700487" language="JavaScript"></script>]]></cnzz>
+    <cnzz>
+      <![CDATA[<script src="http://s4.cnzz.com/z_stat.php?id=1255700487&web_id=1255700487" language="JavaScript"></script>]]>
+    </cnzz>
+  </app>
+  <app>
+    <uid>zy2153</uid>
+    <pid>a41</pid>
+    <url>http://www.sanshengtangzisha.cn/random/index/zy2153-a41</url>
+    <cnzz></cnzz>
+  </app>
+  <app>
+    <uid>zy2149</uid>
+    <pid>kb1037</pid>
+    <url>http://www.sanshengtangzisha.cn/random/raw/zy2149-kb1037</url>
+    <cnzz></cnzz>
   </app>
 </root>

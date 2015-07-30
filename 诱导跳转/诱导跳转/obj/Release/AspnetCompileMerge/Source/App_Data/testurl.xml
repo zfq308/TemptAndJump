@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <test>
+    <company>9v</company>
+    <url>
+      <![CDATA[<script id='mob' type='text/javascript' charset='gb2312' src='http://d.86fm.com/appios.asp?ref=18mobappios&pid=715'></script>]]>
+    </url>
+  </test>
+  <test>
+    <company>zhimeng</company>
+    <url>
+      <![CDATA[<script type="text/javascript">window.location.href="http://clk.uunt.com/link/174291/"</script>]]>
+    </url>
+  </test>
+</root>

