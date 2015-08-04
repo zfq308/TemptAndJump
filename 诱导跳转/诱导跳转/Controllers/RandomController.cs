@@ -21,18 +21,7 @@ namespace 诱导跳转.Controllers
             var q = from d in doc.Descendants("app")
                     select d;
             url = q.Where(a => a.Element("uid").Value == uid && a.Element("pid").Value == pid).FirstOrDefault().Element("url").Value;
-            //foreach (var item in q)
-            //{
-            //    if (item.Element("uid").Value == uid && item.Element("pid").Value == pid)
-            //    {
-            //        url = item.Element("url").Value + sb.ToString() + ".apk";
-            //        break;
-            //    }
-            //    else
-            //    {
-            //        url = "http://www.anzhuangba.com";
-            //    }
-            //}
+            
             if (string.IsNullOrEmpty(url))
             {
                 url = "http://www.anzhuangba.com";
@@ -50,18 +39,7 @@ namespace 诱导跳转.Controllers
             XDocument doc = XDocument.Load(HttpContext.Server.MapPath("~/App_Data/random.xml"));
             var q = from d in doc.Descendants("app") select d;
             url = q.Where(a => a.Element("uid").Value == uid && a.Element("pid").Value == pid).FirstOrDefault().Element("url").Value;
-            //foreach (var item in q)
-            //{
-            //    if (item.Element("uid").Value == uid && item.Element("pid").Value == pid)
-            //    {
-            //        url = item.Element("url").Value;
-            //        break;
-            //    }
-            //    else
-            //    {
-            //        url = "http://www.anzhuangba.com";
-            //    }
-            //}
+            
             if (string.IsNullOrEmpty(url))
             {
                 url = "http://www.anzhuangba.com";
