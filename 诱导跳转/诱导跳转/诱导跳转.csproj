@@ -136,8 +136,14 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Css\1.css" />
+    <Content Include="Css\d.css" />
+    <Content Include="Css\main14.css" />
     <Content Include="Css\my.css" />
     <Content Include="Global.asax" />
+    <Content Include="Img\logo.gif" />
+    <Content Include="Js\mobile.js" />
+    <Content Include="Js\top_i.js" />
+    <Content Include="Js\top_p.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -153,12 +159,14 @@
     <None Include="Properties\PublishProfiles\youdao.pubxml" />
     <Content Include="Views\Test\Index.cshtml" />
     <Content Include="Views\Error\Index.cshtml" />
+    <Content Include="Views\Home\Index1.cshtml" />
+    <Content Include="Views\Home\Index2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Index0.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

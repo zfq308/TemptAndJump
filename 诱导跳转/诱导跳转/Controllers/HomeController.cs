@@ -28,10 +28,12 @@ namespace 诱导跳转.Controllers
             ViewBag.Img3 = SetImgName(false);
             ViewBag.Img4 = SetImgName(false);
             ViewBag.Img5 = SetImgName(false);
-            ViewBag.Img1 = SetImgName(false); 
+            ViewBag.Img1 = SetImgName(false);
+            ViewBag.ReturnUrl = HttpContext.Request.Url;
             #endregion
-
-            return View(pack);
+            var r = new Random();
+            var index = r.Next(0, 3);
+            return View("Index" + index, pack);
         }
 
         private int SetImgName(bool istop) //随机设置图片
@@ -53,18 +55,6 @@ namespace 诱导跳转.Controllers
             var q = from d in doc.Descendants("app") select d;
             result = q.Where(a => a.Element("uid").Value == uid && a.Element("pid").Value == pid).FirstOrDefault().Element(param).Value;
 
-            //foreach (var item in q)
-            //{
-            //    if (item.Element("uid").Value == uid && item.Element("pid").Value == pid)
-            //    {
-            //        result = item.Element(param).Value;
-            //        break;
-            //    }
-            //    else
-            //    {
-            //        result = "http://www.anzhuangba.com";
-            //    }
-            //}
             return result.Split('|');
         }
 

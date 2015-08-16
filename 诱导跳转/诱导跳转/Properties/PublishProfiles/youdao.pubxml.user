@@ -19,10 +19,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/30/2015 16:20:58</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>08/04/2015 10:52:55</publishTime>
+      <publishTime>08/15/2015 12:28:29</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>08/04/2015 10:52:55</publishTime>
+      <publishTime>08/15/2015 12:28:29</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>07/02/2015 17:44:29</publishTime>
@@ -58,10 +58,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/02/2015 17:44:29</publishTime>
     </File>
     <File Include="bin/诱导跳转.dll">
-      <publishTime>08/04/2015 10:52:52</publishTime>
+      <publishTime>08/15/2015 12:28:27</publishTime>
     </File>
     <File Include="Css/1.css">
       <publishTime>07/02/2015 17:58:10</publishTime>
+    </File>
+    <File Include="Css/d.css">
+      <publishTime>08/14/2015 14:35:59</publishTime>
+    </File>
+    <File Include="Css/main14.css">
+      <publishTime>08/15/2015 11:08:10</publishTime>
     </File>
     <File Include="Css/my.css">
       <publishTime>07/30/2015 16:40:07</publishTime>
@@ -207,17 +213,38 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Image/top_line.gif">
       <publishTime>07/02/2015 17:59:32</publishTime>
     </File>
+    <File Include="Img/logo.gif">
+      <publishTime>08/15/2015 11:09:25</publishTime>
+    </File>
+    <File Include="Js/mobile.js">
+      <publishTime>08/15/2015 11:07:56</publishTime>
+    </File>
+    <File Include="Js/top_i.js">
+      <publishTime>08/15/2015 11:07:56</publishTime>
+    </File>
+    <File Include="Js/top_p.js">
+      <publishTime>08/15/2015 11:07:56</publishTime>
+    </File>
     <File Include="packages.config">
       <publishTime>07/02/2015 17:44:30</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>08/04/2015 10:52:53</publishTime>
+      <publishTime>08/15/2015 12:28:28</publishTime>
     </File>
     <File Include="Views/Error/Index.cshtml">
       <publishTime>07/30/2015 16:40:30</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
       <publishTime>07/17/2015 17:45:17</publishTime>
+    </File>
+    <File Include="Views/Home/Index0.cshtml">
+      <publishTime>08/15/2015 11:06:07</publishTime>
+    </File>
+    <File Include="Views/Home/Index1.cshtml">
+      <publishTime>08/14/2015 15:31:38</publishTime>
+    </File>
+    <File Include="Views/Home/Index2.cshtml">
+      <publishTime>08/15/2015 12:26:44</publishTime>
     </File>
     <File Include="Views/Test/Index.cshtml">
       <publishTime>07/30/2015 16:10:59</publishTime>

@@ -16,26 +16,26 @@ namespace 诱导跳转
             routes.MapRoute(
                 name: null,
                 url: "{uid}-{pid}",
-                defaults: new { controller = "Random", action = "Index" }
+                defaults: new { controller = "Home", action = "Index" }
                 );
 
             routes.MapRoute(
                 name: null,
                 url: "{controller}/{action}/{uid}-{pid}",
-                defaults: new { controller = "Random", action = "Index" }
+                defaults: new { controller = "Home", action = "Index" }
                 );
 
             routes.MapRoute(
                 name: null,
                 url: "{controller}/{action}/{uid}",
-                defaults: new { controller = "Random", action = "Index" }
+                defaults: new { controller = "Home", action = "Index" }
             );
             
 
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}",
-                defaults: new { controller = "Random", action = "Index" }
+                defaults: new { controller = "Home", action = "Index" }
             );
         }
     }
