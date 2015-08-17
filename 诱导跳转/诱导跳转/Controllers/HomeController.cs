@@ -31,9 +31,7 @@ namespace 诱导跳转.Controllers
             ViewBag.Img1 = SetImgName(false);
             ViewBag.ReturnUrl = HttpContext.Request.Url;
             #endregion
-            var r = new Random();
-            var index = r.Next(0, 3);
-            return View("Index" + index, pack);
+            return View(pack);
         }
 
         private int SetImgName(bool istop) //随机设置图片
